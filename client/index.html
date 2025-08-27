@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sipariş Notları</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Sipariş Ekle</h1>
+  <form id="orderForm">
+    <input type="text" id="siparis_no" placeholder="Sipariş No" required>
+    <input type="text" id="firma" placeholder="Firma" required>
+    <input type="text" id="urun_kodu" placeholder="Ürün Kodu" required>
+    <input type="text" id="telefon" placeholder="Telefon" required>
+    <input type="number" id="odeme_alindi" placeholder="Ödeme Alındı" value="0">
+    <input type="number" id="odeme_alinmadi" placeholder="Ödeme Alınmadı" value="0">
+    <button type="submit">Gönder</button>
+  </form>
+
+  <h2>Gelen Siparişler</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Sipariş No</th>
+        <th>Firma</th>
+        <th>Ürün Kodu</th>
+        <th>Telefon</th>
+        <th>Ödeme Alındı</th>
+        <th>Ödeme Alınmadı</th>
+        <th>Tarih</th>
+      </tr>
+    </thead>
+    <tbody id="ordersList"></tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
